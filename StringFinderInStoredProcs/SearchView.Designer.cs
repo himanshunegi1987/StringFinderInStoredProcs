@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchView));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -76,7 +77,7 @@
             this.cbxIsCaseSensitive.Checked = true;
             this.cbxIsCaseSensitive.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxIsCaseSensitive.Location = new System.Drawing.Point(168, 323);
-            this.cbxIsCaseSensitive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxIsCaseSensitive.Margin = new System.Windows.Forms.Padding(4);
             this.cbxIsCaseSensitive.Name = "cbxIsCaseSensitive";
             this.cbxIsCaseSensitive.Size = new System.Drawing.Size(133, 21);
             this.cbxIsCaseSensitive.TabIndex = 3;
@@ -87,19 +88,20 @@
             // 
             this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSearch.Location = new System.Drawing.Point(913, 323);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 28);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearchString
             // 
             this.txtSearchString.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearchString.Location = new System.Drawing.Point(171, 15);
-            this.txtSearchString.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearchString.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchString.Name = "txtSearchString";
             this.txtSearchString.Size = new System.Drawing.Size(845, 22);
             this.txtSearchString.TabIndex = 5;
@@ -110,18 +112,18 @@
             this.rtxtStoredProcsToLookFor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtxtStoredProcsToLookFor.Location = new System.Drawing.Point(171, 47);
-            this.rtxtStoredProcsToLookFor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtxtStoredProcsToLookFor.Margin = new System.Windows.Forms.Padding(4);
             this.rtxtStoredProcsToLookFor.Name = "rtxtStoredProcsToLookFor";
             this.rtxtStoredProcsToLookFor.Size = new System.Drawing.Size(845, 189);
             this.rtxtStoredProcsToLookFor.TabIndex = 6;
-            this.rtxtStoredProcsToLookFor.Text = "";
+            this.rtxtStoredProcsToLookFor.Text = resources.GetString("rtxtStoredProcsToLookFor.Text");
             // 
             // rtxtStoredProcLocations
             // 
             this.rtxtStoredProcLocations.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtxtStoredProcLocations.Location = new System.Drawing.Point(168, 244);
-            this.rtxtStoredProcLocations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtxtStoredProcLocations.Margin = new System.Windows.Forms.Padding(4);
             this.rtxtStoredProcLocations.Name = "rtxtStoredProcLocations";
             this.rtxtStoredProcLocations.Size = new System.Drawing.Size(845, 71);
             this.rtxtStoredProcLocations.TabIndex = 7;
@@ -143,7 +145,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtxtResult.Location = new System.Drawing.Point(168, 359);
-            this.rtxtResult.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtxtResult.Margin = new System.Windows.Forms.Padding(4);
             this.rtxtResult.Name = "rtxtResult";
             this.rtxtResult.Size = new System.Drawing.Size(845, 289);
             this.rtxtResult.TabIndex = 9;
@@ -164,7 +166,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SearchView";
             this.Text = "SearchView";
             this.ResumeLayout(false);
